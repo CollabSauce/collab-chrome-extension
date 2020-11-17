@@ -1,4 +1,15 @@
 # Chrome Extension Webpack Boilerplate
+__________________________________________________
+# Collab Sauce README Section
+
+To Run locally, spin up the "Collab-Communicator" repo:
+   - See the section of the README in that repo entitled: "When running as a chrome-extension locally".
+   - Get the ngrok URL
+   - run `WIDGET_URL=<NGROK_URL>/js/widget.js yarn start`. I.e `WIDGET_URL=https://eb13a3679943.ngrok.io/js/widget.js yarn start`.
+
+To do a production build, just run `yarn build`.
+
+# Default README Section
 
 A basic foundation boilerplate for rich Chrome Extensions using [Webpack](https://webpack.github.io/) to help you write modular and modern Javascript code, load CSS easily and [automatic reload the browser on code changes](https://webpack.github.io/docs/webpack-dev-server.html#automatic-refresh).
 

@@ -1,16 +1,27 @@
 {
-  "name": "Chrome Extension Webpack",
-  "options_page": "options.html",
-  "background": {
-    "page": "background.html"
+  "manifest_version" : 2,
+  "name": "Collab Sauce",
+  "version": "0.1",
+  "description": "Chrome Extension for Collab Sauce",
+  "icons": {
+    "192": "logo192.png",
+    "512": "logo512.png"
   },
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
+    "default_icon": "logo192.png"
   },
-  "icons": {
-    "128": "icon-128.png"
+  "background" : {
+    "scripts" : ["background.bundle.js"],
+    "persistent": false
   },
-  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content_script.bundle.js"]
+  }],
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "activeTab"
+  ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
