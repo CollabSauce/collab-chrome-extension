@@ -2,7 +2,7 @@
   "manifest_version" : 2,
   "name": "Collab Sauce",
   "version": "0.1",
-  "description": "Collab Sauce is the easiest way to collect, organise and act on website feedback. Collab Sauce transforms your website into a collaborative experience. (1) Change your website designs visually while logging CSS into tasks (2) create and collect comments that are logged in tasks and (3) automate metadata collection to make devs lives easier.",
+  "description": "Collab Sauce allows you to organize and act on website feedback. Includes: Css Editor; Gridlines; WebPaint Tool; Metadata Collection",
   "icons": {
     "192": "logo192.png",
     "512": "logo512.png"
