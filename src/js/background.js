@@ -38,9 +38,16 @@ function createImage(dataURL, dimensions, callback) {
       // parameter 7: destination y coordinate
       // parameter 8: destination width
       // parameter 9: destination height
+
+      const devicePixelRatio = window.devicePixelRatio;
+      const left = dimensions.left * devicePixelRatio;
+      const top = dimensions.top * devicePixelRatio;
+      const width = dimensions.width * devicePixelRatio;
+      const height = dimensions.height * devicePixelRatio;
+
       context.drawImage(image,
-        dimensions.left, dimensions.top,
-        dimensions.width, dimensions.height,
+        left, top,
+        width, height,
         0, 0,
         dimensions.width, dimensions.height
       );
